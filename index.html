@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Research Data Survey Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bree+Serif|Prompt" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+
+<body>  
+  <h1 id="title">Survey</h1>
+  <div id="outer-form">
+    <p id ="description"><b>How Can We Help You Make Better Sense Of Your Research Data?</b></p>
+  
+  <form id="survey-form">
+      <div class="rowTab">
+        <div class="labels">
+          <label id="name-label" for="name">*Name:</label>
+        </div>
+          <div class="rightTab">
+            <input id="name" class= "input-field" type="text" autofocus required placeholder="Enter your name">
+          </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email">*Email: </label>
+        </div>
+        <div class="rightTab">
+          <input id="email" class="input-field" type="email" autofocus required placeholder="Enter your email">
+        </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">*Age:</label>
+  </div>
+  <div class="rightTab">
+    <input id="number" class="input-field" type="number" autofocus required min="1" max="150" placeholder="Age">
+  </div>
+  </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label for="currentPos">Which option best describes your current role?</label>
+    </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+          <option disabled value="please select an option">Please select an option</option>
+          <option value="undergraduate">Undergraduate</option>
+          <option value="postgraduate">Postgraduate</option>
+          <option value="researcher">Early Career Researcher</option>
+          <option value="academic">Academic</option>
+          <option value="Scientist">Scientist</option>
+          <option value="Engineer">Engineer</option>
+        </select>
+    </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="research" for="description">*Please  describe the nature of your research / research data</label>
+      </div>
+      <div class="rightTab">
+        <input id="desc" class="input-field" type="text" autofocus required>
+      </div>
+    </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="data-set">*How large is your data set?</label>
+        </div>
+        <div class="rightTab">
+          <ul style="list-style: none;" required>
+            <li class="radio"><label>Megabyte MB<input type="radio" name="radiobuttons" value="1" class="data-set"></label></li>
+            <li class="radio"><label>Gigabyte (MB)<input type="radio" name="radiobuttons" value="2" class="data-set"></label></li>
+            <li class="radio"><label>Terabyte (TB)<input type="radio" name="radiobuttons" value="3" class="data-set"></label></li>
+            <li class="radio"><label>≥ Petabyte (PB)<input type="radio" name="radiobuttons" value="4" class="data-set"></label></li>
+          </ul>
+      </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label>Which data processing tools are you using at the moment?</label>
+        </div>
+        <div class="rightTab">
+          <input id="tools" class="input-field" type="text">
+        </div>
+      </div>
+    <div class ="rowTab">
+      <div class="labels">
+        <label for="challenges">What are your most pressing data challenges?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;" required>
+          <li class="checkbox"><label>Capture<input type="checkbox" name="priorities" value="1" class="challenges"></label></li>
+          <li class="checkbox"><label>Storage<input type="checkbox" name="priorities" value="2" class="challenges"></label></li>
+          <li class="checkbox"><label>Sharing<input type="checkbox" name="priorities" value="3" class="challenges"></label></li>
+          <li class="checkbox"><label>Transfer<input type="checkbox" name="priorities" value="4" class="challenges"></label></li>
+          <li class="checkbox"><label>Analysis<input type="checkbox" name="priorities" value="5" class="challenges"></label></li>
+          <li class="checkbox"><label>Visualisation<input type="checkbox" name="priorities" value="6" class="challenges"></label></li>
+          <li class="checkbox"><label>Query<input type="checkbox" name="priorities" value="7" class="challenges"></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="textarea">Do you have any comments or suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="comments" placeholder="Enter your comments here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+  </div>
+</body>
+</html>
