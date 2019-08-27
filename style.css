@@ -41,22 +41,23 @@ body {
 
 .rowTab {
  padding: 1em;
+ display: flex;
  }
 
 .labels {
-  display: inline-block;
   text-align: right;
-  vertical-align: top;
-  width: 45%;
+  width: 50%;
 }
 
 .rightTab {
-  display: inline-block;
-  text-align: left;
-  width: 30%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
   }
 
 .input-field {
+  position: relative;
+  display: block;
   height: 2.4em;
   width: 30em;
   border: 0.1em solid;
@@ -67,6 +68,8 @@ body {
   }
 
 .dropdown {
+  position: relative;
+  display: block;
   height: 2.4em;
   width: 30em;
   border: 0.1em solid;
@@ -74,30 +77,15 @@ body {
   border-color: rgb(0, 0, 50);
   margin-left: 1em;
   font-size: 0.8em;
-}
-
-@media (max-width: 750px) {
-  .input-field, .dropdown {
-    height: 1.2em;
-    width: 15em;
   }
-}
 
 .radio, .checkbox {
   position: relative;
   display: block;
   bottom: 1em;
-  //margin-right: -10em;
-}
-
-@media (max-width: 750px) {
-  .radio, .checkbox {
-    transform: scale(0.5);
-    bottom: 0.5em;
   }
-}
 
-.data-set,
+data-set,
 input[type="radio"] {
   float: left;
   margin-top: 0.8em;
@@ -112,19 +100,14 @@ input[type="checkbox"] {
 }
 
 .comments {
+  position: relative;
+  display: block;
   height: 15em;
-  width: 35em;
+  width: 32em;
   border: 0.1em solid;
   border-radius: 1%;
   margin-left: 1em;
   font-size: 0.8em;
-}
-
-@media (max-width: 750px) {
-  .comments {
-    height: 10em;
-    width: 20em;
-  }
 }
 
 button {
@@ -132,16 +115,11 @@ button {
   background-color: rgb(0, 0, 150);
   color: rgb(255, 255, 255);
   align-self: center;
-  border: 1px solid rgb(50, 50, 50);
-  transform: scale(1.8);
+  font-size: 1.3em;
 }
 
 button:hover {
   background-color: rgb(55, 55, 255);
+  transform: scale(1.1);
   }
 
-@media (max-width: 750px) {
-  button {
-    transform: scale(0.5);
-  }
-}
