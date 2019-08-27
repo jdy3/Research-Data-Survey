@@ -17,7 +17,7 @@ body {
   text-align: center;
   font-size: 7em;
   color: rgb(0, 0, 50);
-  text-shadow: -0.05em 0.05em 0.05em rgba(0,0,0,0.53);
+  text-shadow: -0.03em 0.03em 0.03em rgba(0,0,0,0.53);
   }
 
 #outer-form {
