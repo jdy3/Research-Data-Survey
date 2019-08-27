@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Prompt", sans-serif;
-  background-color: rgb(255,255,255);
+  background-color: rgba(0, 0, 50, 0.1);
   color: rgb(0, 0, 50);
   font-size: 10px;
 }
@@ -17,6 +17,7 @@ body {
   text-align: center;
   font-size: 7em;
   color: rgb(0, 0, 50);
+  text-shadow: -0.05em 0.05em 0.05em rgba(0,0,0,0.53);
   }
 
 #outer-form {
